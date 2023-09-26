@@ -31,7 +31,7 @@ header li {
     margin: 10px;
 }
 
-figure {
+header figure {
     position: relative
 }
 
@@ -43,6 +43,13 @@ p {
 .columns {
     display: flex;
     flex-direction: row;
+}
+
+.work-links {
+    display: flex;
+    flex: 1 0 50%;
+    width: 50%;
+    height: 25vh;
 }
 
 .contact-links {
@@ -108,13 +115,6 @@ p {
     font-size: 30px;
 }
 
-#work-links {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-
-}
-
 #contact-me {
     color: var(--blue-grey);
     border-right: solid;
@@ -129,4 +129,19 @@ p {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 40px 40px 40px 0px;
+}
+
+#work-opts {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px;
+}
+
+#top-work {
+    display: flex;
+    flex: 2 1 auto;
+    max-width: 100%;
 }
