@@ -1,0 +1,92 @@
+:root {
+    --grey: dimgrey;
+    --blue: skyblue;
+}
+
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 20px 0px;
+}
+
+header {
+    background-color: var(--grey);
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+    flex:1;
+}
+
+header li {
+    display: inline;
+    color: var(--blue);
+    text-decoration: underline 3px;
+    margin: 10px;
+}
+
+figure {
+    position: relative
+}
+
+h2 {
+    color: var(--grey);
+    border-right: solid;
+    text-align: right;
+    margin: 35px 0px 35px 90px;
+    padding: 0px 15px 25px;
+    font-size: 30px;
+}
+
+p {
+    margin: 10px;
+    padding: 25px;
+}
+
+.columns {
+    display: flex;
+    flex-direction: row;
+}
+
+#my-name {
+    background-color: var(--blue);
+    color: var(--grey);
+    font-size: 40px;
+    text-align: right;
+    padding: 5px;
+    height: 60px;
+    margin: 20px 10px 10px 0px;
+    width: 400px;
+}
+
+#pagenav {
+    display: flex;
+    justify-content: end;
+    align-content: flex-end;
+    height: 90px;
+    flex-wrap: wrap;
+    margin: 0px 20px;
+}
+
+#headerimg {
+    height: 200px;
+    width: 100vw;
+}
+
+#subtitle {
+    background-color: var(--blue);
+    color: var(--grey);
+    font-size: 20px;
+    text-align: center;
+    padding: 5px;
+    width: 250px;
+    height: 50px;
+    position: absolute;
+    right: 50px;
+    bottom: 25px;
+}
