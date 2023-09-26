@@ -1,22 +1,23 @@
 :root {
     --grey: dimgrey;
     --blue: skyblue;
+    --blue-grey: #4073a0;
 }
 
 * {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-section{
-    display: flex;
-    flex-direction: row;
-    margin: 0px 0px 20px 0px;
-}
-
 header {
     background-color: var(--grey);
     display: flex;
     flex-direction: column;
+}
+
+header section{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 20px 0px;
 }
 
 nav {
@@ -34,15 +35,6 @@ figure {
     position: relative
 }
 
-h2 {
-    color: var(--grey);
-    border-right: solid;
-    text-align: right;
-    margin: 35px 0px 35px 90px;
-    padding: 0px 15px 25px;
-    font-size: 30px;
-}
-
 p {
     margin: 10px;
     padding: 25px;
@@ -51,6 +43,13 @@ p {
 .columns {
     display: flex;
     flex-direction: row;
+}
+
+.contact-links {
+    display: inline;
+    text-decoration: underline 3px var(--blue-grey);
+    margin: 10px;
+    padding: 25px;
 }
 
 #my-name {
@@ -89,4 +88,45 @@ p {
     position: absolute;
     right: 50px;
     bottom: 25px;
+}
+
+#about-me {
+    color: var(--blue-grey);
+    border-right: solid;
+    text-align: right;
+    margin: 35px 0px 35px 90px;
+    padding: 0px 15px 25px;
+    font-size: 30px;
+}
+
+#work {
+    color: var(--blue-grey);
+    border-right: solid;
+    text-align: right;
+    margin: 35px 0px 35px 125px;
+    padding: 0px 15px 25px;
+    font-size: 30px;
+}
+
+#work-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+}
+
+#contact-me {
+    color: var(--blue-grey);
+    border-right: solid;
+    text-align: right;
+    margin: 35px 0px 35px 30px;
+    padding: 0px 15px 25px;
+    font-size: 30px;
+}
+
+#contact-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 40px 40px 40px 0px;
 }
