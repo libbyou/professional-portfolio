@@ -46,9 +46,10 @@ p {
 }
 
 .work-links {
-    display: flex;
+   display: flex;
+    flex-wrap: wrap;
     flex: 0 1 50%;
-    width: 50%;
+    width: 100%;
     height: 25vh;
     border: solid var(--blue) 5px;
     margin: 10px;
@@ -70,6 +71,11 @@ p {
 
 .language-type {
     font-size: 11px;
+}
+
+#top-work:hover,
+.work-links:hover {
+    box-shadow: inset 0px yellow;
 }
 
 #my-name {
@@ -114,7 +120,7 @@ p {
     color: var(--blue-grey);
     border-right: solid;
     text-align: right;
-    margin: 35px 0px 35px 90px;
+    margin: 35px 0px 35px 115px;
     padding: 0px 15px 25px;
     font-size: 30px;
 }
