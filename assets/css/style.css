@@ -47,9 +47,11 @@ p {
 
 .work-links {
     display: flex;
-    flex: 1 0 50%;
+    flex: 0 1 50%;
     width: 50%;
     height: 25vh;
+    border: solid var(--blue) 5px;
+    margin: 10px;
 }
 
 .contact-links {
@@ -57,6 +59,17 @@ p {
     text-decoration: underline 3px var(--blue-grey);
     margin: 10px;
     padding: 25px;
+}
+
+.link-text {
+    /* background-color: var(--blue); */
+    color: var(--grey);
+    font-weight: bold;
+    font-size: 15px;
+}
+
+.language-type {
+    font-size: 11px;
 }
 
 #my-name {
@@ -131,17 +144,27 @@ p {
     padding: 40px 40px 40px 0px;
 }
 
-#work-opts {
+#work-figures {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     margin: 50px;
-}
+ } 
 
 #top-work {
     display: flex;
-    flex: 2 1 auto;
+    flex: 1;
     max-width: 100%;
+    border: solid var(--blue) 5px;
+    margin: 5px;
+}
+
+@media screen and (max-width: 992px) {
+    
+}
+
+@media screen and (max-width: 768px) {
+   * {width: 100%;
+    }
 }
